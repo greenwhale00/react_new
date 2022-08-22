@@ -1,0 +1,33 @@
+import { useRef, useState } from "react";
+
+
+const App = () => {
+
+  const [num, setNum] = useState(1);
+
+
+  const link = useRef(1);
+  console.log(num)
+  console.log('App')
+
+  return (
+    <>
+      {num}
+      <p>lllll</p>
+      <div>ddd</div>
+      {console.log(num, link.current)}
+      <button onClick={
+        () => (
+          setNum(num + 1),
+          console.log(num),
+          link.current = link.current + 1,
+          console.log(link.current)
+        )
+      }>click</button>
+    </>
+
+  )
+}
+
+
+export default App;
