@@ -1,0 +1,34 @@
+const Test = (props) => {
+  const { list, age, name } = props;
+  return (
+    <div>
+      <h2>My {props.list} {props.age} 친구 {props.name} List</h2>
+      <ul>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+      </ul>
+    </div>
+  )
+
+}
+
+
+const App = () => {
+  return (
+    <>
+      <Test list="우영우" name="동그라미" age={4} />
+      <Test list="우영우" name="동그라미" age={4} />
+      <Test list="우영우" name="동그라미" age={4} />
+      <Test list="우영우" name="동그라미" age={4} />
+      <div>01</div>
+      <div>02</div>
+    </>
+  )
+}
+
+export default App;

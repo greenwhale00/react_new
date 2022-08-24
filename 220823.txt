@@ -1,0 +1,43 @@
+const Test = ({ list, age, name }) => {
+
+  return (
+    <div>
+      <h2>
+        My {list} {age} 친구 {name} List
+        <button onClick={
+          () => (
+            console.log({ list })
+          )
+        }>click</button>
+
+
+      </h2>
+      <ul>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+      </ul>
+    </div>
+  )
+
+}
+
+
+const App = () => {
+  return (
+    <>
+      <Test list="우영우" name="동그라미" age={4} />
+      <Test list="스위스" name="동그라미" age={4} />
+      <Test list="토마토" name="동그라미" age={4} />
+      <Test list="별똥별" name="동그라미" age={4} />
+      <div>01</div>
+      <div>02</div>
+    </>
+  )
+}
+
+export default App;
